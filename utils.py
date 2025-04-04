@@ -1,7 +1,5 @@
 from urllib.parse import urlparse
 
-
-
 #this is a function to extract the subject code from the url
 def extract_course_code(url: str) -> str:
 

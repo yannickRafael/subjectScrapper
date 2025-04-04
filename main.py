@@ -1,9 +1,8 @@
 import requests
 from const import *
 from bs4 import BeautifulSoup
-from subject import Subject, SubjectEncoder
+from subject import Subject
 from utils import extract_course_code
-import json
 import re
 from firebase import  save_subject
 

@@ -1,8 +1,5 @@
 import json
 
-from cachecontrol.serialize import Serializer
-
-
 #subject class
 class Subject :
     def __init__(self, name, identifier, ref):
