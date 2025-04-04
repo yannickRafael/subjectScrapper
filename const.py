@@ -1,3 +1,5 @@
+#list of courses and its id's from firebase database
+#the id's will be used to create a reference
 courses = {
     "lca": "QPqrE1GX6QMf5qbApL3Z",
     "lea": "RapyWFeUyLIHeE3SaNoi",
@@ -13,4 +15,5 @@ courses = {
     "lgf": "bXlR5nXf5Wu7iHytAWhP"
 }
 
+#this is the url to the website
 partial_url = 'https://fenix.isutc.ac.mz/isutc/cursos/'

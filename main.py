@@ -28,9 +28,15 @@ for course in courses.keys():
         # get all links inside the table
         anchors = table.find_all('a')
 
+        # iterate on each anchor
         for anchor in anchors:
+            #get the content from the anchor. eg: <a>This is the content</a>
             name = re.sub(r'\s+', ' ', anchor.text).strip()
+
+            #get the subject code inside the link
             code = extract_course_code(anchor['href'].strip())
+
+            # create a subject instance
             foundSubject = Subject(name=name, identifier=code, ref=courses.get(course))
             subjects.append(foundSubject)
 
